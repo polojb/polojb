@@ -3,24 +3,29 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Porfolio</title>
+    <title>Jaxon Polo</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
         <div class="logo">Jaxon Polo</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a  href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+ 
+    <!-- Hamburger Navigation (mobile) -->
     <nav id="hamburger-nav">
         <div class="logo">Jaxon Polo</div>
-        <div hamburger-menu>
+        <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="togglemenu()">
                 <span></span>
                 <span></span>
@@ -28,11 +33,15 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
                 <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-                <li><a  href="#contact" onclick="togglemenu()">Contact</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+ 
+    <!-- Profile / Hero Section -->
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profilePic.png" alt="Jaxon Polo profile picture">
@@ -40,187 +49,273 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Jaxon Polo</h1>
+            <p class="section__text__p2">Computer Science Student</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Jaxon_Polo_Resume.pdf')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact
+                    Contact Info
                 </button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png"
-                alt="My Linkedin profile"
-                class="icon" 
-                onclick="location.href='https://https://www.linkedin.com/in/jaxon-polo'"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/jaxon-polo'"
                 />
                 <img src="./assets/github.png"
-                alt="My GitHub profile"
-                class="icon"
-                onclick="location.href='https://https://github.com/Apollo785'"
+                    alt="My GitHub profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/polojb'"
                 />
             </div>
         </div>
     </section>
+ 
+    <!-- About Section -->
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img
-                src="./assets/aboutPic.png"
-                alt="Profile picture"
-                class="about-pic"
+                    src="./assets/aboutPic.png"
+                    alt="Profile picture"
+                    class="about-pic"
                 />
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
-                    
                     <div class="details-container">
                         <img src="./assets/education.png"
-                        alt="Education icon"
-                        class="icon"
+                            alt="Education icon"
+                            class="icon"
                         />
                         <h3>Education</h3>
-                        <p>Currently pursuing a bachelor's degree in Computer Science at the University of Cincinnati</p>
+                        <p>B.S. Computer Science<br>University of Cincinnati<br>Expected May 2027 | GPA: 3.25</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Kitchen Lead<br>Taglio, Cincinnati OH<br>June 2023 – Present</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Hi, I’m Jaxon Polo, a Computer Science major passionate about building innovative solutions through code. 
-                        I enjoy solving complex problems, designing efficient systems, and continuously learning new technologies. 
-                        My interests span software development, game development, and AI, and I’m always looking for ways to apply my skills to real-world challenges.
-                        Throughout my academic journey, I've worked on diverse projects ranging from web applications to low-level systems programming. 
-                        I’m comfortable with languages like Python, C++, HTML/CSS and JavaScript.
+                    <p>
+                        Hi, I'm Jaxon Polo, a Computer Science student at the University of Cincinnati 
+                        passionate about building software that solves real problems. My interests span 
+                        game development, full-stack development, and database systems. I've built arcade 
+                        game clones in Unity and C++, a full e-commerce database system with Python and 
+                        MySQL, and live API-driven web apps in JavaScript. I'm comfortable working across 
+                        C, C++, C#, Python, JavaScript, and SQL.
                     </p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        />
     </section>
+ 
+    <!-- Skills Section -->
+    <section id="skills">
+        <p class="section__text__p1">My Technical</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="skill-group">
+                <span class="skill-group-label">Languages</span>
+                <div class="skill-badges">
+                    <span class="skill-badge">C</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">C#</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">MATLAB</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <span class="skill-group-label">Web</span>
+                <div class="skill-badges">
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">REST APIs</span>
+                    <span class="skill-badge">GitHub Pages</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <span class="skill-group-label">Tools</span>
+                <div class="skill-badges">
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">GitHub</span>
+                    <span class="skill-badge">Unity</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">VS Code</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <span class="skill-group-label">Concepts</span>
+                <div class="skill-badges">
+                    <span class="skill-badge">OOP</span>
+                    <span class="skill-badge">Data Structures</span>
+                    <span class="skill-badge">Algorithms</span>
+                    <span class="skill-badge">Database Design</span>
+                    <span class="skill-badge">Game Dev</span>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="section__text__p1">My Work</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Kitchen Lead</h2>
+                    <p class="experience-org">Taglio · Cincinnati, OH · June 2023 – Present</p>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+                            <div><p>Lead kitchen operations during high-volume service, managing stations and coordinating team pacing independently</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+                            <div><p>Develop prep lists and conduct inventory assessments to place produce orders and minimize waste</p></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+                            <div><p>Onboarded and trained multiple new employees; cross-trained across kitchen, delivery, and register roles</p></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Projects Section -->
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="projects-details-container">
             <div class="about-containers">
+ 
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img
-                        src="./assets/tetris.png"
-                        alt="Project 1"
-                        class="project-img"
+                            src="./assets/database.png"
+                            alt="E-Commerce Database project"
+                            class="project-img"
                         />
                     </div>
-                    <h2 class="projects-title">Project One</h2>
+                    <h2 class="projects-title">E-Commerce Database</h2>
+                    <p class="project-tech">Python · MySQL · SQL</p>
+                    <p class="project-description">Designed a relational MySQL schema from scratch and built a Python CLI for customer management, product search, order processing, and purchase reporting.</p>
                     <div class="btn-container">
-                        <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="loction.href='htpps://https://github.com/Apollo785'"
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/polojb'"
                         >
-                            Github
+                            GitHub
                         </button>
-                        <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="loction.href='htpps://https://github.com/Apollo785'"
+                    </div>
+                </div>
+ 
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/unity.png"
+                            alt="Unity 2D game collection"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="projects-title">2D Game Collection</h2>
+                    <p class="project-tech">C# · Unity</p>
+                    <p class="project-description">Developed 7 complete 2D games in Unity including Flappy Bird, Frogger, Mario, Pong, Snake, Space Invaders, and Tetris, with physics, collision detection, and OOP architecture.</p>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/polojb'"
+                        >
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+ 
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/openWeatherAPI.png"
+                            alt="Weather Dashboard"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="projects-title">Weather Dashboard</h2>
+                    <p class="project-tech">JavaScript · OpenWeather API · HTML/CSS</p>
+                    <p class="project-description">Interactive dashboard that fetches real-time weather data for any city using the OpenWeather REST API, with a responsive layout and error handling.</p>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/polojb'"
+                        >
+                            GitHub
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/polojb'"
                         >
                             Live Demo
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                        src="./assets/space-invaders.png"
-                        alt="Project 2"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="projects-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="loction.href='htpps://https://github.com/Apollo785'"
-                        >
-                            Github
-                        </button>
-                        <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="loction.href='htpps://https://github.com/Apollo785'"
-                        >
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                        src="./assets/weather-app.png"
-                        alt="Project 3"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="projects-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="loction.href='htpps://https://github.com/Apollo785'"
-                        >
-                            Github
-                        </button>
-                        <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="loction.href='htpps://https://github.com/Apollo785'"
-                        >
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
+ 
             </div>
         </div>
-        <img 
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        />
     </section>
+ 
+    <!-- Contact Section -->
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
+                    src="./assets/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
                 />
                 <p><a href="mailto:polojb@mail.uc.edu">polojb@mail.uc.edu</a></p>
             </div>
             <div class="contact-info-container">
                 <img
-                src="./assets/linkedin.png"
-                alt="Linkedin icon"
-                class="icon contact-icon"
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
                 />
-                <p><a href="https://https://www.linkedin.com/in/jaxon-polo">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/jaxon-polo" target="_blank">LinkedIn</a></p>
             </div>
         </div>
     </section>
+ 
+    <!-- Footer -->
     <footer>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a  href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Coppright &#169;2025 Jaxon Polo. All Rights Reserved</p>
+        <p>Copyright &#169; 2025 Jaxon Polo. All Rights Reserved.</p>
     </footer>
+ 
     <script src="script.js"></script>
 </body>
 </html>
+ 
